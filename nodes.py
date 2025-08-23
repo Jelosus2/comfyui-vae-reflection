@@ -1,4 +1,5 @@
 from torch import nn
+import copy
 
 class AddReflectionToVAE:
     @classmethod
@@ -18,10 +19,13 @@ class AddReflectionToVAE:
         if vae.first_stage_model is None:
             return (vae,)
 
-        for module in vae.first_stage_model.modules():
+        vae_out = copy.copy(vae)
+        vae_out.first_stage_model = copy.deepcopy(vae.first_stage_model)
+
+        for module in vae_out.first_stage_model.modules():
             if isinstance(module, nn.Conv2d):
                 pad_h, pad_w = module.padding if isinstance(module.padding, tuple) else (module.padding, module.padding)
                 if pad_h > 0 or pad_w > 0:
                     module.padding_mode = "reflect"
         
-        return (vae,)
+        return (vae_out,)

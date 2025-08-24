@@ -1,11 +1,3 @@
-from .nodes import AddReflectionToVAE
-
-NODE_CLASS_MAPPINGS = {
-    "AddReflectionToVAE": AddReflectionToVAE
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "AddReflectionToVAE": "Add Reflection to VAE"
-}
+from .VAEReflectionNodes.vae_reflection import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
 
 __all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]

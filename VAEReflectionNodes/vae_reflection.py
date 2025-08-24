@@ -29,3 +29,11 @@ class AddReflectionToVAE:
                     module.padding_mode = "reflect"
         
         return (vae_out,)
+
+NODE_CLASS_MAPPINGS = {
+    "AddReflectionToVAE": AddReflectionToVAE
+}
+
+NODE_DISPLAY_NAME_MAPPINGS = {
+    "AddReflectionToVAE": "Add Reflection to VAE"
+}

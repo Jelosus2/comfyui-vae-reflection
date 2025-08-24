@@ -1,0 +1,13 @@
+[project]
+name = "comfyui-vae-reflection"
+description = "A simple custom node to use reflect padding mode in the conv layers of VAEs."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/Jelosus2/comfyui-vae-reflection"
+
+[tool.comfy]
+PublisherId = "jelosus1"
+DisplayName = "ComfyUI VAE Reflection"
+Icon = ""

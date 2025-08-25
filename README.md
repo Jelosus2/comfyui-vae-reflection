@@ -23,20 +23,26 @@ You can integrate this node in your workflow very easily like shown in the pictu
 ![workflow](./images/example_workflow.png)
 
 ## Installation as SwarmUI extension
+
+1. Update SwarmUI to the latest version.
+2. Go to Server -> Extensions tab.
+3. Find `VAE Reflection` in the extension list and click Install.
+4. Use the button at the top in the Extensions tab to reload SwarmUI.
+
+### Manual Install
 1. Update SwarmUI to the latest version.
 2. If running, shutdown SwarmUI.
 3. Open a terminal in `SwarmUI/src/Extensions`.
 4. Clone the repository with `git clone https://github.com/Jelosus2/comfyui-vae-reflection`.
 5. Run `launch-windows-dev.ps1` or `launch-linux-dev.sh` to recompile SwarmUI. Once it's done you can shutdown the dev version.
 6. Launch SwarmUI and wait for the backend to finish loading.
-7. Search for the VAE Reflection category in the paramaters list, if you don't see it you need to display the advanced options.
 
 ### Updating
 1. Update SwarmUI to the latest version.
 2. Go to Server -> Extensions tab.
 3. Click the Update button for the VAE Reflection extension.
 
-To use the extension you only need to check the checkbox of the `Enable VAE Reflection` parameter.
+Search for the VAE Reflection category in the paramaters list, if you don't see it you need to display the advanced options. To use the extension you only need to check the checkbox of the `Enable VAE Reflection` parameter.
 
 ![enable extension](./images/enable_extension.png)
 
